@@ -3,6 +3,10 @@
 Upload a single file in React app.
 
 ---
+### Install Packages
+#### `yarn install`
+#### `cd ./src/backend/ && yarn install`
+
 ### Starting Project
 
 In the project directory run:
