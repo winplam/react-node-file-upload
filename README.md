@@ -9,7 +9,7 @@ Upload a single file in React app.
 
 ### Starting Project
 
-In the project directory run:
+In the root of the project directory (cd ../..) run:
 
 ### `yarn start`
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
