@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 
 export default class FilesUploadComponent extends Component {
   constructor (props) {
@@ -17,9 +16,11 @@ export default class FilesUploadComponent extends Component {
     e.preventDefault()
     const formData = new FormData()
     formData.append('profileImg', this.state.profileImg)
-    axios.post('http://localhost:4000/api/user-profile', formData, {}).then(res => {
-      console.log(res)
-    })
+    const API_URL = 'http://localhost:4000/api'
+    fetch(`${API_URL}/user-profile`, {
+      method: 'POST',
+      body: formData,
+    }).then(res => {console.log(res)})
   }
 
   render () {
